@@ -13,6 +13,9 @@
     <sprite>sprites\PlayerSprite</sprite>
     <sprite>sprites\PortalBlastSprite</sprite>
     <sprite>sprites\PortalSurfaceSprite</sprite>
+    <sprite>sprites\ExitSprite</sprite>
+    <sprite>sprites\TurretSprite</sprite>
+    <sprite>sprites\BulletSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\FloorTiles</background>
@@ -30,9 +33,13 @@
     <object>objects\PortalBlastObject</object>
     <object>objects\PortalSurfaceObject</object>
     <object>objects\PersistentEntity</object>
+    <object>objects\ExitObject</object>
+    <object>objects\TurretObject</object>
+    <object>objects\BulletObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

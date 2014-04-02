@@ -231,6 +231,15 @@
     <instance objName="PortalSurfaceObject" x="416" y="416" name="inst_858CCA77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalSurfaceObject" x="448" y="416" name="inst_7CD3C303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalSurfaceObject" x="448" y="384" name="inst_6B630804" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ExitObject" x="544" y="384" name="inst_9DAE0158" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="336" y="432" name="inst_F9453CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="368" y="432" name="inst_39415B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalSurfaceObject" x="32" y="384" name="inst_80BC8E88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalSurfaceObject" x="32" y="416" name="inst_59AC4C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalSurfaceObject" x="64" y="416" name="inst_5935A10D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalSurfaceObject" x="64" y="384" name="inst_6CCB62CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="432" y="176" name="inst_049FC540" locked="0" code="direction = -90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="592" y="304" name="inst_B56EC0F8" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="32" y="32" w="32" h="32" xo="0" yo="0" id="10000000" name="inst_C3615826" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

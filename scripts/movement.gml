@@ -35,3 +35,6 @@ if(xdiff != 0 || ydiff != 0) {
         hasMoved = true;
      }
 }
+
+if(xdiff > 0) image_index = 1;
+else if(xdiff < 0) image_index = 0;

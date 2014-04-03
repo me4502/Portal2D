@@ -33,7 +33,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>
@@ -59,47 +59,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="PortalSurfaceObject">
-      <action>
-        <libid>1</libid>
-        <id>831</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_partemit_create</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>x+16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>x+16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>y+16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>y+16</string>
-          </argument>
-        </arguments>
-      </action>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>612</id>
@@ -112,7 +72,7 @@
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
-        <isnot>0</isnot>
+        <isnot>-1</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
@@ -130,28 +90,40 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>833</id>
+        <id>532</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
+        <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_partemit_burst</functionname>
+        <functionname>action_effect</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>7</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
           </argument>
           <argument>
-            <kind>0</kind>
+            <kind>13</kind>
+            <string>16711680</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
             <string>1</string>
           </argument>
         </arguments>
@@ -172,28 +144,164 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>833</id>
+        <id>532</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
+        <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_partemit_burst</functionname>
+        <functionname>action_effect</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>4</kind>
+            <string>7</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
             <string>0</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>33023</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="PortalSurfaceObject">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>type</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>532</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_effect</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>7</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>1</string>
           </argument>
           <argument>
+            <kind>13</kind>
+            <string>16711680</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>532</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_effect</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>7</string>
+          </argument>
+          <argument>
             <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>33023</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
             <string>1</string>
           </argument>
         </arguments>
@@ -262,11 +370,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>16</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>16</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -316,11 +424,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>16</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>16</string>
           </argument>
           <argument>
             <kind>4</kind>

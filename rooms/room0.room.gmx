@@ -235,7 +235,10 @@
     <instance objName="TurretObject" x="368" y="432" name="inst_39415B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="432" y="176" name="inst_049FC540" locked="0" code="direction = -90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="592" y="304" name="inst_B56EC0F8" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="BulletObject" x="0" y="736" name="inst_99F1E827" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ConditionalWallObject" x="576" y="320" name="inst_0009D8C7" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ConditionalWallObject" x="448" y="320" name="inst_F1CE218D" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ConditionalWallObject" x="416" y="320" name="inst_ADCE256C" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ButtonObject" x="160" y="416" name="inst_CE3F48F4" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PlayerObject" x="64" y="64" name="inst_3C45465E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

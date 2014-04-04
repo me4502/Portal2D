@@ -17,6 +17,8 @@
     <sprite>sprites\TurretSprite</sprite>
     <sprite>sprites\BulletSprite</sprite>
     <sprite>sprites\ButtonSprite</sprite>
+    <sprite>sprites\ConditionalWallSprite</sprite>
+    <sprite>sprites\CubeSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\FloorTiles</background>
@@ -24,6 +26,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\movement.gml</script>
+    <script>scripts\ButtonCollision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\WallObject</object>
@@ -37,6 +40,9 @@
     <object>objects\ExitObject</object>
     <object>objects\TurretObject</object>
     <object>objects\BulletObject</object>
+    <object>objects\ButtonObject</object>
+    <object>objects\ConditionalWallObject</object>
+    <object>objects\CubeObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

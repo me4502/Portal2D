@@ -240,6 +240,7 @@
     <instance objName="ConditionalWallObject" x="416" y="320" name="inst_ADCE256C" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ButtonObject" x="160" y="416" name="inst_CE3F48F4" locked="0" code="key = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PlayerObject" x="64" y="64" name="inst_3C45465E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="CubeObject" x="416" y="96" name="inst_315CB074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="32" y="32" w="32" h="32" xo="0" yo="0" id="10000000" name="inst_C3615826" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

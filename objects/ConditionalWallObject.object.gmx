@@ -11,6 +11,30 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>isOpen</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -26,7 +50,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-image_index = 1;
+if(isOpen == 1)
+    image_index = 0;
+else
+    image_index = 1;
 </string>
           </argument>
         </arguments>
@@ -49,25 +76,29 @@ image_index = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index == 0) {
+            <string>var wkey = key;
 
-  for(var i = 0; i &lt; instance_number(ButtonObject); i++) {
-    var toSet = -1;
-    with(instance_find(ButtonObject, i)) {
-      toSet = 0;
-      
-      if(collision_circle(x+8, y+8, 16, PlayerObject, true, true) == noone) {
-        toSet = 1;
-        image_index = 0;
-      } else if(collision_circle(x+8, y+8, 16, CubeObject, true, true) == noone) {
-        toSet = 1;
-        image_index = 0;
-      } else
-        image_index = 1;
-    }
-    if(toSet &gt;= 0) image_index = toSet;
-  }
+var toSet = -1;
+
+for(var i = 0; i &lt; instance_number(ButtonObject); i++) {
+   with(instance_find(ButtonObject, i)) {
+     if(wkey != key) continue;
+     if(collision_circle(x+8, y+8, 16, PlayerObject, true, true) == noone &amp;&amp; collision_circle(x+8, y+8, 16, CubeObject, true, true) == noone) {
+       toSet = 0;
+       image_index = 0;
+     } else {
+       toSet = 1;
+       image_index = 1;
+     }
+   }
 }
+
+if(toSet != -1) isOpen = toSet;
+
+if(isOpen == 0 &amp;&amp; image_index == 0)
+    image_index = 1;
+else if(isOpen == 1 &amp;&amp; image_index != 0)
+    image_index = 0;
 
 if(image_index == 1)
     image_index = 2;
@@ -90,5 +121,8 @@ else if(image_index == 2)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>16,16</point>
+  </PhysicsShapePoints>
 </object>

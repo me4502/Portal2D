@@ -403,8 +403,18 @@ if(temp != noone) {
         if(dist &lt; 32 &amp;&amp; carried == 1) {
             carried = 0;
             PlayerObject.isCarrying = 0;
-        } else {
-            PlayerObject.isCarrying = 1;
+        }
+    }
+}
+
+var temp = instance_nearest(x, y, TurretObject);
+if(temp != noone) {
+    with(temp) {
+        var dist = sqrt(power(PlayerObject.x - x, 2) + power(PlayerObject.y - y, 2));
+        
+        if(dist &lt; 64 &amp;&amp; carried == 1) {
+            carried = 0;
+            PlayerObject.isCarrying = 0;
         }
     }
 }
@@ -479,8 +489,18 @@ if(temp != noone) {
         if(dist &lt; 32) {
             carried = 1;
             PlayerObject.isCarrying = 1;
-        } else {
-            PlayerObject.isCarrying = 0;
+        }
+    }
+}
+
+temp = instance_nearest(x, y, TurretObject);
+if(temp != noone) {
+    with(temp) {
+        var dist = sqrt(power(PlayerObject.x - x, 2) + power(PlayerObject.y - y, 2));
+        
+        if(dist &lt; 64) {
+            carried = 1;
+            PlayerObject.isCarrying = 1;
         }
     }
 }

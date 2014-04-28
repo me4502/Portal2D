@@ -38,3 +38,28 @@ if(xdiff != 0 || ydiff != 0) {
 
 if(xdiff > 0) image_index = 1;
 else if(xdiff < 0) image_index = 0;
+
+if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
+    if(hspeed != 0)
+        hspeed *= 0.925;
+    if(vspeed != 0)
+        vspeed *= 0.925;
+} else {
+    if(hspeed != 0)
+        hspeed *= 0.99;
+    if(vspeed != 0)
+        vspeed *= 0.99;
+}
+if(hspeed == 0 && vspeed == 0) {
+    for(var i = 0; i < instance_number(Hazard); i++) {
+        with(instance_find(Hazard, i)) {
+            solid = 1;
+        }
+    }
+} else {
+    for(var i = 0; i < instance_number(Hazard); i++) {
+      with(instance_find(Hazard, i)) {
+        solid = 0;
+      }
+    }
+}

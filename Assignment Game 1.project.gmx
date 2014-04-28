@@ -19,6 +19,7 @@
     <sprite>sprites\ButtonSprite</sprite>
     <sprite>sprites\ConditionalWallSprite</sprite>
     <sprite>sprites\CubeSprite</sprite>
+    <sprite>sprites\FaithPlateSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\FloorTiles</background>
@@ -43,6 +44,7 @@
     <object>objects\ButtonObject</object>
     <object>objects\ConditionalWallObject</object>
     <object>objects\CubeObject</object>
+    <object>objects\FaithPlateObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

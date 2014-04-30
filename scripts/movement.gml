@@ -1,14 +1,16 @@
 var ydiff = 0;
 var xdiff = 0;
 
-if(keyboard_check(ord('W')))
-    ydiff -= 5;
-if(keyboard_check(ord('S')))
-    ydiff += 5;
-if(keyboard_check(ord('A')))
-    xdiff -= 5;
-if(keyboard_check(ord('D')))
-    xdiff += 5;
+if(hspeed == 0 && vspeed == 0) {
+    if(keyboard_check(ord('W')))
+        ydiff -= 5;
+    if(keyboard_check(ord('S')))
+        ydiff += 5;
+    if(keyboard_check(ord('A')))
+        xdiff -= 5;
+    if(keyboard_check(ord('D')))
+        xdiff += 5;
+}
 
 if(xdiff != 0 && ydiff != 0) { //Only allow a maximum movement speed of 5, even when moving diagonally.
     var angle = arctan(ydiff/xdiff);

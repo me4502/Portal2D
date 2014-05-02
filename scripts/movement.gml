@@ -1,15 +1,20 @@
 var ydiff = 0;
 var xdiff = 0;
 
+var movementDiff = 5;
+if(keyboard_check(vk_shift)) {
+    movementDiff = 7;
+}
+
 if(hspeed == 0 && vspeed == 0) {
     if(keyboard_check(ord('W')))
-        ydiff -= 5;
+        ydiff -= movementDiff;
     if(keyboard_check(ord('S')))
-        ydiff += 5;
+        ydiff += movementDiff;
     if(keyboard_check(ord('A')))
-        xdiff -= 5;
+        xdiff -= movementDiff;
     if(keyboard_check(ord('D')))
-        xdiff += 5;
+        xdiff += movementDiff;
 }
 
 if(xdiff != 0 && ydiff != 0) { //Only allow a maximum movement speed of 5, even when moving diagonally.
@@ -18,11 +23,25 @@ if(xdiff != 0 && ydiff != 0) { //Only allow a maximum movement speed of 5, even 
     var md = 1;
     if(ydiff < 0) md = -1;
     
-    y += cos(angle)*5*md;
-    x += sin(angle)*5*md;
-} else {
+    ydiff = cos(angle)*movementDiff*md;
+    xdiff = sin(angle)*movementDiff*md;
+}
+
+var collider = instance_place(x+xdiff, y+ydiff, WallObject);
+
+if(collider == noone) {
     y += ydiff;
     x += xdiff;
+} else {
+
+    collider = instance_place(x+xdiff, y, WallObject);
+    if(collider == noone) {
+        x += xdiff;
+    } else {
+        collider = instance_place(x, y+ydiff, WallObject);
+        if(collider == noone)
+            y += ydiff;
+    }
 }
 
 if(xdiff != 0 || ydiff != 0) {

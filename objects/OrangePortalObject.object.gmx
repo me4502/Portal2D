@@ -129,25 +129,27 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>109</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_to</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>BluePortalObject.x-(x-OrangePortalObject.x)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>BluePortalObject.y-(y-OrangePortalObject.y)</string>
+            <kind>1</kind>
+            <string>script_execute(canMove, 0, x, y, BluePortalObject.x-(x-OrangePortalObject.x), BluePortalObject.y-(y-OrangePortalObject.y));
+
+if(x != event0NewX &amp;&amp; y != event0NewY) {
+    x = event0NewX;
+    y = event0NewY;
+}
+</string>
           </argument>
         </arguments>
       </action>

@@ -28,6 +28,7 @@
   <scripts name="scripts">
     <script>scripts\movement.gml</script>
     <script>scripts\ButtonCollision.gml</script>
+    <script>scripts\canMove.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\WallObject</object>

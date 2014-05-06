@@ -15,6 +15,24 @@ if(hspeed == 0 && vspeed == 0) {
         xdiff -= movementDiff;
     if(keyboard_check(ord('D')))
         xdiff += movementDiff;
+} else {
+
+    script_execute(canMove, 1, x, y, x+hspeed, y+vspeed);
+    
+    if(event0Success == 1) {
+        hspeed = event0NewX-event0OldX;
+        vspeed = event0NewY-event0OldY;
+    }
+}
+
+script_execute(canMove, 0, x, y, x+xdiff, y+ydiff);
+
+if(event0Success == 1) {
+    xdiff = event0NewX-event0OldX;
+    ydiff = event0NewY-event0OldY;
+} else {
+    xdiff = 0;
+    ydiff = 0;
 }
 
 if(xdiff != 0 && ydiff != 0) { //Only allow a maximum movement speed of 5, even when moving diagonally.
@@ -27,23 +45,9 @@ if(xdiff != 0 && ydiff != 0) { //Only allow a maximum movement speed of 5, even 
     xdiff = sin(angle)*movementDiff*md;
 }
 
-var collider = instance_place(x+xdiff, y+ydiff, WallObject);
-
-if(collider == noone) {
-    y += ydiff;
-    x += xdiff;
-} else {
-
-    collider = instance_place(x+xdiff, y, WallObject);
-    if(collider == noone) {
-        x += xdiff;
-    } else {
-        collider = instance_place(x, y+ydiff, WallObject);
-        if(collider == noone)
-            y += ydiff;
-    }
-}
-
+x += xdiff;
+y += ydiff;
+    
 if(xdiff != 0 || ydiff != 0) {
 
     if(collision_circle(x+16, y+16, 16, BluePortalObject, true, true) == noone && lastTouched != 0) {
@@ -70,17 +74,4 @@ if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
         hspeed *= 0.99;
     if(vspeed != 0)
         vspeed *= 0.99;
-}
-if(hspeed == 0 && vspeed == 0) {
-    for(var i = 0; i < instance_number(Hazard); i++) {
-        with(instance_find(Hazard, i)) {
-            solid = 1;
-        }
-    }
-} else {
-    for(var i = 0; i < instance_number(Hazard); i++) {
-      with(instance_find(Hazard, i)) {
-        solid = 0;
-      }
-    }
 }

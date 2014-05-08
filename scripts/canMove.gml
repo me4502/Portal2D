@@ -12,8 +12,10 @@
 
 //Firstly, let's do a check on the player.
 
-var oldX = argument1, oldY = argument2;
-var newX = argument3, newY = argument4;
+oldX = argument1;
+oldY = argument2;
+newX = argument3;
+newY = argument4;
   
 event0Cancelled = 0;
 event0OldX = oldX;
@@ -38,19 +40,17 @@ for(var i = 0; i < 3; i++) {
         continue;
     } else {
         collider = instance_place(event0NewX, event0OldY, collidables[i]);
-        if(collider == noone) {
+        if(collider == noone && event0NewY != event0OldY) {
             event0NewY = event0OldY;
             continue;
         } else {
             collider = instance_place(event0OldX, event0NewY, collidables[i]);
-            if(collider == noone) {
+            if(collider == noone && event0NewX != event0OldX) {
                 event0NewX = event0OldX;
                 continue;
             } else {
                 event0Cancelled = 1;
                 break;
-                //event0NewY = event0OldY;
-                //event0NewX = event0OldX;
             }
         }
     }

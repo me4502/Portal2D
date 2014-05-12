@@ -971,14 +971,19 @@ if(event0Collided != noone) {
     with(event0Collided) {
         if(object_get_name(object_index) == "ConditionalWallObject") {
             if(isOpen == 0)
-                shouldCancel = 1;
-            else
                 shouldCancel = 0;
+            else
+                shouldCancel = 1;
         }
     }
     
-    if(shouldCancel != -1)
+    if(shouldCancel != -1) {
         event0Cancelled = !shouldCancel;
+        if(shouldCancel = 1) {
+            event0NewX = newX;
+            event0NewY = newY;
+        }
+    }
 }
 </string>
           </argument>

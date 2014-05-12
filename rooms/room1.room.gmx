@@ -1550,6 +1550,9 @@
     <tile bgName="FloorTiles" x="256" y="64" w="32" h="32" xo="96" yo="0" id="10001568" name="inst_7CB0D0F1" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="FloorTiles" x="288" y="64" w="32" h="32" xo="32" yo="32" id="10001569" name="inst_01F4A097" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="FloorTiles" x="288" y="96" w="32" h="32" xo="64" yo="0" id="10001570" name="inst_49679489" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="FloorTiles" x="128" y="256" w="32" h="32" xo="64" yo="0" id="10001571" name="inst_90185E0A" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="FloorTiles" x="128" y="288" w="32" h="32" xo="64" yo="0" id="10001572" name="inst_DCDC067E" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="FloorTiles" x="128" y="320" w="32" h="32" xo="64" yo="0" id="10001573" name="inst_FB06746A" depth="50" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

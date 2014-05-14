@@ -71,6 +71,30 @@
     <instance objName="Hazard" x="128" y="288" name="inst_AAD548D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hazard" x="128" y="320" name="inst_A67BF4AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hazard" x="128" y="256" name="inst_B57F7B1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="384" name="inst_53801B0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="416" name="inst_09140B57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="384" name="inst_4864A096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="416" name="inst_1441C7B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="384" name="inst_4ECC409A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="416" name="inst_11B050B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="448" name="inst_1ABBD3AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="448" name="inst_704F4987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="448" name="inst_25F49F4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="480" name="inst_AACC89BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="480" name="inst_C5EF5EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="480" name="inst_345B8752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="512" name="inst_36173CC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="512" name="inst_6D2CD160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="512" name="inst_E35BF40F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="544" name="inst_5861D74A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="544" name="inst_5E3463F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="544" name="inst_B126A532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="576" name="inst_6E456F5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="576" name="inst_5CECC105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="576" name="inst_AFD840CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="320" y="608" name="inst_29F1EF01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="352" y="608" name="inst_952FF408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hazard" x="384" y="608" name="inst_02D68838" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalSurfaceObject" x="416" y="64" name="inst_D4ABB5FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalSurfaceObject" x="448" y="64" name="inst_0FAE38C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalSurfaceObject" x="448" y="96" name="inst_6485D591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -320,6 +344,25 @@
     <instance objName="ButtonObject" x="160" y="576" name="inst_23E056D5" locked="0" code="key=3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ConditionalWallObject" x="224" y="512" name="inst_642E1ABF" locked="0" code="key=3;&#xA;direction=0;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="ConditionalWallObject" x="224" y="544" name="inst_18190863" locked="0" code="key=3;&#xA;direction=0;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="WallObject" x="32" y="576" name="inst_3A9FF7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="32" y="608" name="inst_1981E71A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="64" y="608" name="inst_61539A14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="64" y="576" name="inst_09491CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="224" y="576" name="inst_1F0D2FD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="224" y="608" name="inst_71F3EDCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="256" y="608" name="inst_15EA0BC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="256" y="576" name="inst_FBB72A48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="384" name="inst_12DABBA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="416" name="inst_4F9B70AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="448" name="inst_FDC748BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="480" name="inst_100C8B3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="512" name="inst_36FBD2F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="544" name="inst_0B5F7325" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="576" name="inst_23C06C54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="448" y="608" name="inst_405025CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="256" y="384" name="inst_AF9F4C3A" locked="0" code="direction=180;&#xA;key=4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WallObject" x="256" y="416" name="inst_FE106559" locked="0" code="direction=180;&#xA;key=4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ButtonObject" x="416" y="384" name="inst_9AF51414" locked="0" code="key=4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PlayerObject" x="64" y="64" name="inst_8393FBD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="336" y="16" name="inst_FE818BEE" locked="0" code="direction = 180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="368" y="16" name="inst_3BBE1135" locked="0" code="direction = 180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -328,8 +371,11 @@
     <instance objName="CubeObject" x="256" y="256" name="inst_CB01C401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="272" y="337" name="inst_53CABD67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="177" y="273" name="inst_330A77EB" locked="0" code="direction=-90;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TurretObject" x="145" y="467" name="inst_6240DEA4" locked="0" code="direction=180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="144" y="465" name="inst_6240DEA4" locked="0" code="direction=180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="177" y="465" name="inst_6BE7414E" locked="0" code="direction=180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="241" y="402" name="inst_C6D9B4FC" locked="0" code="direction=-90;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TurretObject" x="241" y="433" name="inst_13319A05" locked="0" code="direction=-90;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="CubeObject" x="416" y="384" name="inst_C5970FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="160" y="64" w="32" h="32" xo="0" yo="0" id="10000353" name="inst_8DE8E269" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -6,7 +6,7 @@ if(keyboard_check(vk_shift)) {
     movementDiff = 7;
 }
 
-if(hspeed == 0 && vspeed == 0) {
+if(abs(hspeed) < 1 && abs(vspeed) < 1) {
     if(keyboard_check(ord('W')))
         ydiff -= movementDiff;
     if(keyboard_check(ord('S')))
@@ -16,13 +16,10 @@ if(hspeed == 0 && vspeed == 0) {
     if(keyboard_check(ord('D')))
         xdiff += movementDiff;
 } else {
-
     script_execute(canMove, 1, x, y, x+hspeed, y+vspeed);
     
-    if(event0Success == 1) {
-        hspeed = event0NewX-event0OldX;
-        vspeed = event0NewY-event0OldY;
-    }
+    hspeed = event0NewX-event0OldX;
+    vspeed = event0NewY-event0OldY;
 }
 
 script_execute(canMove, 0, x, y, x+xdiff, y+ydiff);

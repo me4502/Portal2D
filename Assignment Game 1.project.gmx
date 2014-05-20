@@ -20,6 +20,7 @@
     <sprite>sprites\ConditionalWallSprite</sprite>
     <sprite>sprites\CubeSprite</sprite>
     <sprite>sprites\FaithPlateSprite</sprite>
+    <sprite>sprites\RocketTurretSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\FloorTiles</background>
@@ -46,6 +47,7 @@
     <object>objects\ConditionalWallObject</object>
     <object>objects\CubeObject</object>
     <object>objects\FaithPlateObject</object>
+    <object>objects\RocketTurretObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

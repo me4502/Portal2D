@@ -14,7 +14,7 @@ for(var i = 0; i < instance_number(WallObject); i++) {
       if(direction == 180) {
           if(wkey == key) {
             image_index = 0;
-            isOpen = 1;
+            isOpen = 0;
           }
       }
   }

@@ -89,6 +89,8 @@ if(power(dx, 2) + power(dy, 2) &lt; power(radius, 2)) {
             direction = point_direction(x,y,PlayerObject.x+16,PlayerObject.y+16);
         }
     }
+} else {
+    tick = 19;
 }
 </string>
           </argument>
@@ -144,7 +146,7 @@ if(power(dx, 2) + power(dy, 2) &lt; power(radius, 2)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(0.3);
+            <string>draw_set_alpha(0.2);
 </string>
           </argument>
         </arguments>

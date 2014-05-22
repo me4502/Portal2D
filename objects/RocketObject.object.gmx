@@ -45,6 +45,46 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
+        <id>532</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_effect</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>4</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>33023</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>542</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -72,6 +112,40 @@
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var wantedDir = point_direction(x,y,PlayerObject.x+16,PlayerObject.y+16);
+
+var delta = wantedDir - direction;
+var rot = -3;
+
+if(180 &lt;= delta &amp;&amp; delta &lt;= 360)
+    direction += rot;
+else if(0 &lt;= delta &amp;&amp; delta &lt; 180)
+    direction -= rot;
+else if (-180 &lt;= delta &amp;&amp; delta &lt; 0)
+    direction += rot;
+else if (-360 &lt;= delta &amp;&amp; delta &lt; -180)
+    direction -= rot;
+
+</string>
           </argument>
         </arguments>
       </action>

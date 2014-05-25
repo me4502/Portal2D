@@ -6,6 +6,10 @@ if(keyboard_check(vk_shift)) {
     movementDiff = 7;
 }
 
+if(powerupTimeout > 0) {
+    movementDiff += 5;
+}
+
 if(abs(hspeed) < 1 && abs(vspeed) < 1) {
     if(keyboard_check(ord('W')))
         ydiff -= movementDiff;

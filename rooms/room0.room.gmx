@@ -241,6 +241,7 @@
     <instance objName="TurretObject" x="432" y="176" name="inst_049FC540" locked="0" code="direction = -90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TurretObject" x="592" y="304" name="inst_B56EC0F8" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="CubeObject" x="416" y="96" name="inst_315CB074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="LongFallBootsObject" x="416" y="224" name="inst_B8394A49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="32" y="32" w="32" h="32" xo="0" yo="0" id="10000000" name="inst_C3615826" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

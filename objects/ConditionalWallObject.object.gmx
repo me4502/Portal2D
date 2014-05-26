@@ -83,7 +83,7 @@ var toSet = -1;
 for(var i = 0; i &lt; instance_number(ButtonObject); i++) {
    with(instance_find(ButtonObject, i)) {
      if(wkey != key) continue;
-     if(collision_circle(x+8, y+8, 16, PlayerObject, true, true) == noone &amp;&amp; collision_circle(x+8, y+8, 8, CubeObject, true, true) == noone) {
+     if(instance_place(x+8, y+8, PlayerObject) == noone &amp;&amp; instance_place(x+8, y+8, CubeObject) == noone) {
        toSet = 0;
        image_index = 0;
      }

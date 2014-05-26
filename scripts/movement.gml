@@ -76,3 +76,31 @@ if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
     if(vspeed != 0)
         vspeed *= 0.99;
 }
+
+script_execute(canMove, 0, x, y, x, y);
+
+if(event0Collided != noone) {
+    for(var i = 0; i < 32; i++) {
+        script_execute(canMove, 0, x, y, x+i, y);
+        if(event0Collided == noone) {
+            x = event0NewX;
+        } else {
+            script_execute(canMove, 0, x, y, x-i, y);
+            if(event0Collided == noone) {
+                x = event0NewX;
+            } else {
+                script_execute(canMove, 0, x, y, x, y+i);
+                if(event0Collided == noone) {
+                    y = event0NewY;
+                } else {
+                    script_execute(canMove, 0, x, y, x, y-i);
+                    if(event0Collided == noone) {
+                        y = event0NewY;
+                    } else {
+                        //TODO
+                    }
+                }
+            }
+        }
+    }
+}

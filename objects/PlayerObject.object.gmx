@@ -691,6 +691,7 @@ lastTouched = -1;
     event0Cancelled = 0;
     event0NewX = newX;
     event0NewY = newY;
+    event0Collided = noone;
     exit;
 }
 
@@ -711,6 +712,7 @@ if(event0Collided != noone) {
         if(shouldCancel = 1) {
             event0NewX = newX;
             event0NewY = newY;
+            event0Collided = noone;
         } else {
             hspeed = 0;
             vspeed = 0;

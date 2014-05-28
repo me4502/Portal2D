@@ -2,8 +2,10 @@ var ydiff = 0;
 var xdiff = 0;
 
 var movementDiff = 5;
-if(keyboard_check(vk_shift)) {
+if(sprinting == 1 && exhaustion < 50) {
     movementDiff = 7;
+} else {
+    sprinting = 0;
 }
 
 if(powerupTimeout > 0) {
@@ -60,6 +62,17 @@ if(xdiff != 0 || ydiff != 0) {
         lastTouched = 1;
         hasMoved = true;
      }
+     
+     if(powerupTimeout <= 0) {
+        if(movementDiff > 5)
+            exhaustion += 2;
+        else
+            exhaustion -= 0.5;
+     } else {
+        exhaustion -= 2;
+     }
+} else {
+    exhaustion -= 1;
 }
 
 if(xdiff > 0) image_index = 1;
@@ -106,3 +119,8 @@ if(freecam == 0 && hspeed == 0 && vspeed == 0) {
         }
     }
 }
+
+if(exhaustion < 0)
+    exhaustion = 0;
+else if(exhaustion > 50)
+    exhaustion = 50;

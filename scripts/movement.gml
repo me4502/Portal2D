@@ -65,7 +65,7 @@ if(xdiff != 0 || ydiff != 0) {
      
      if(powerupTimeout <= 0) {
         if(movementDiff > 5)
-            exhaustion += 2;
+            exhaustion += 1.5;
         else
             exhaustion -= 0.5;
      } else {
@@ -94,24 +94,30 @@ if(freecam == 0 && hspeed == 0 && vspeed == 0) {
     script_execute(canMove, 0, x, y, x, y);
     
     if(event0Collided != noone) {
-        for(var i = 0; i < 32; i++) {
+        var i = 0;
+        while(true) {
+            i++;
             script_execute(canMove, 0, x, y, x+i, y);
             if(event0Collided == noone) {
                 x = event0NewX;
+                break;
             } else {
                 script_execute(canMove, 0, x, y, x-i, y);
                 if(event0Collided == noone) {
                     x = event0NewX;
+                    break;
                 } else {
                     script_execute(canMove, 0, x, y, x, y+i);
                     if(event0Collided == noone) {
                         y = event0NewY;
+                        break;
                     } else {
                         script_execute(canMove, 0, x, y, x, y-i);
                         if(event0Collided == noone) {
                             y = event0NewY;
+                            break;
                         } else {
-                            //TODO
+                            //Onto the next iteration.
                         }
                     }
                 }

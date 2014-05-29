@@ -775,37 +775,22 @@ if(event0Collided != noone) {
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
-        <id>511</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_rectangle</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50+50</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400+10</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>draw_set_alpha(0.5);
+</string>
           </argument>
         </arguments>
       </action>
@@ -825,23 +810,120 @@ if(event0Collided != noone) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>50</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>400</string>
+            <string>460</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>50+exhaustion</string>
+            <string>60</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>400+10</string>
+            <string>480</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_alpha(1.0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>516</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_gradient_hor</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>465</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>5+exhaustion</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>465+10</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>8454143</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>49151</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>511</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_rectangle</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>465</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>5+50</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>465+10</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -1331,6 +1413,32 @@ if(temp != noone) {
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprinting</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

@@ -10,8 +10,6 @@
  * (4) - newY
  */
 
-//Firstly, let's do a check on the player.
-
 oldX = argument1;
 oldY = argument2;
 newX = argument3;

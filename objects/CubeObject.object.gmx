@@ -320,6 +320,9 @@
 
     //So, we are probably moving..
     script_execute(canMove, 1, x, y, x+hspeed, y+vspeed);
+    
+    hspeed = event0NewX-x;
+    vspeed = event0NewY-y;
 }
 </string>
           </argument>

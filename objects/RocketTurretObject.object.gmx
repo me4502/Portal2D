@@ -150,7 +150,7 @@ if(power(dx, 2) + power(dy, 2) &lt; power(radius, 2)) {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>25</string>
+            <string>5</string>
           </argument>
           <argument>
             <kind>4</kind>

@@ -65,7 +65,7 @@ if(xdiff != 0 || ydiff != 0) {
      
      if(powerupTimeout <= 0) {
         if(movementDiff > 5)
-            exhaustion += 1.5;
+            exhaustion += 1;
         else
             exhaustion -= 0.5;
      } else {

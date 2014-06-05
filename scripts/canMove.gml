@@ -28,12 +28,12 @@ collidables[1] = Hazard;
 collidables[2] = ConditionalWallObject;
 
 for(var i = 0; i < 3; i++) {
-
+    
     if(argument0 == 1 && i == 1) continue;
-
+    
     var collider = instance_place(event0NewX, event0NewY, collidables[i]);
     event0Collided = collider;
-
+    
     if(collider == noone) {
         continue;
     } else {
@@ -56,6 +56,22 @@ for(var i = 0; i < 3; i++) {
 
 if(event0OldX == event0NewX && event0OldY == event0NewY)
     event0Cancelled = 1;
+else if(event0Cancelled == 1) {
+    if(event0NewX != event0OldX) {
+        if(event0NewX > event0OldX)
+            event0NewX -= min(1,event0NewX-event0OldX);
+        if(event0NewX < event0OldX)
+            event0NewX += min(1,event0OldX-event0NewX);
+    } else if(event0NewY != event0OldY) {
+        if(event0NewY > event0OldY)
+            event0NewY -= min(1,event0NewY-event0OldY);
+        if(event0NewY < event0OldY)
+            event0NewY += min(1,event0OldY-event0NewY);
+    } else {
+        script_execute(canMove, argument1, event0OldX, event0OldY, event0NewX, event0NewY);
+        return 1;
+    }
+}
 
 event_user(0);
 

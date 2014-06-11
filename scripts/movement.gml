@@ -9,7 +9,7 @@ if(sprinting == 1 && exhaustion < 50) {
 }
 
 if(powerupTimeout > 0) {
-    movementDiff += 5;
+    movementDiff += powerupTimeout / 60;
 }
 
 if(abs(hspeed) < 1 && abs(vspeed) < 1) {

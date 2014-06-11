@@ -54,6 +54,14 @@ for(var i = 0; i < 3; i++) {
     }
 }
 
+if(event0NewX > room_width || event0NewX < 0) {
+    event0NewX = event0OldX;
+    event0Collided = 0;
+} else if(event0NewY+32 > room_height || event0NewY < 0) {
+    event0NewY = event0OldY;
+    event0Collided = 0;
+}
+
 if(event0OldX == event0NewX && event0OldY == event0NewY)
     event0Cancelled = 1;
 else if(event0Cancelled == 1) {

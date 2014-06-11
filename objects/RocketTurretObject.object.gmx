@@ -214,6 +214,26 @@ if(power(dx, 2) + power(dy, 2) &lt; power(radius, 2)) {
       </action>
       <action>
         <libid>1</libid>
+        <id>701</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>50</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>203</id>
         <kind>0</kind>
         <userelative>0</userelative>

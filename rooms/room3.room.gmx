@@ -246,13 +246,19 @@
     <instance objName="PortalWallObject" x="192" y="96" name="inst_629D3A7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalWallObject" x="192" y="128" name="inst_EA5DA576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalWallObject" x="192" y="160" name="inst_E1CD36EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PortalWallObject" x="192" y="32" name="inst_715EFC5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PortalWallObject" x="192" y="0" name="inst_489745FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RocketTurretObject" x="336" y="432" name="inst_D3A69D99" locked="0" code="radius=4*32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RocketTurretObject" x="336" y="48" name="inst_6C8B5170" locked="0" code="radius=4*32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalWallObject" x="192" y="288" name="inst_BB352EE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalWallObject" x="192" y="320" name="inst_3C353AFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PortalWallObject" x="192" y="352" name="inst_40930300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PortalWallObject" x="192" y="416" name="inst_CC53334F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PortalWallObject" x="192" y="448" name="inst_32422463" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="160" y="64" name="inst_31A088C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="128" y="64" name="inst_4FDBD4FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="96" y="384" name="inst_23FE2C40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="128" y="384" name="inst_6D72F792" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="160" y="384" name="inst_7FAC941D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalWallObject" x="96" y="64" name="inst_FEBC8E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RocketTurretObject" x="432" y="240" name="inst_C3A7968F" locked="0" code="radius=4*32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PortalSurfaceObject" x="512" y="224" name="inst_A1FA10E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="0" y="384" w="32" h="32" xo="0" yo="0" id="10003532" name="inst_D311E37F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

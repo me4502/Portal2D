@@ -8,7 +8,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>31</bbox_right>
-  <bbox_top>1</bbox_top>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>31</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -20,5 +20,8 @@
   <height>32</height>
   <frames>
     <frame index="0">images\PortalWallSprite_0.png</frame>
+    <frame index="1">images\PortalWallSprite_1.png</frame>
+    <frame index="2">images\PortalWallSprite_2.png</frame>
+    <frame index="3">images\PortalWallSprite_3.png</frame>
   </frames>
 </sprite>

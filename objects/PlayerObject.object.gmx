@@ -1307,7 +1307,7 @@ if(event0Collided != noone) {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.5</string>
+            <string>0.4</string>
           </argument>
         </arguments>
       </action>

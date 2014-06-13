@@ -78,6 +78,7 @@ if(xdiff != 0 || ydiff != 0) {
         hasMoved = true;
      }
      
+     //Change exhaustion according to different states.
      if(powerupTimeout <= 0) {
         if(movementDiff > 5)
             exhaustion += 1;
@@ -88,7 +89,7 @@ if(xdiff != 0 || ydiff != 0) {
      }
 } else {
 
-    //Standing still = Faster recovery
+    //Standing still = Faster recovery.
     exhaustion -= 1;
 }
 
@@ -109,6 +110,7 @@ if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
         vspeed *= 0.99;
 }
 
+//When not in freecam, and not being moved by an aerial faith plate, push out of collidable tiles.
 if(freecam == 0 && hspeed == 0 && vspeed == 0) {
     script_execute(canMove, 0, x, y, x, y);
     
@@ -145,7 +147,5 @@ if(freecam == 0 && hspeed == 0 && vspeed == 0) {
     }
 }
 
-if(exhaustion < 0)
-    exhaustion = 0;
-else if(exhaustion > 50)
-    exhaustion = 50;
+//Cap the exhaustion value to be between 0 and 50.
+exhaustion = min(50, max(0, exhaustion));

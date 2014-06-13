@@ -20,4 +20,14 @@ for(var i = 0; i < instance_number(WallObject); i++) {
   }
 }
 
+for(var i = 0; i < instance_number(FaithPlateObject); i++) {
+  with(instance_find(FaithPlateObject, i)) {
+      if(depth == -1) {
+          if(wkey == key) {
+            isOpen = 1;
+          }
+      }
+  }
+}
+
 image_index = 1;

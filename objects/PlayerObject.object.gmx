@@ -759,7 +759,8 @@ lastTouched = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(freecam == 1) {
+            <string>//If freecam is enabled, ignore collisions.
+if(freecam == 1) {
     event0Cancelled = 0;
     event0NewX = newX;
     event0NewY = newY;
@@ -767,6 +768,7 @@ lastTouched = -1;
     exit;
 }
 
+//Ignore collisions with conditional walls that are open
 if(event0Collided != noone) {
     var shouldCancel = -1;
     
@@ -1626,7 +1628,8 @@ if(temp != noone) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var temp = instance_nearest(x, y, CubeObject);
+            <string>//Perform checks for player carrying
+var temp = instance_nearest(x, y, CubeObject);
 if(temp != noone) {
     with(temp) {
         
@@ -1644,7 +1647,7 @@ if(temp != noone) {
     with(temp) {
         var dist = sqrt(power(PlayerObject.x - x, 2) + power(PlayerObject.y - y, 2));
         
-        if(dist &lt; 64) {
+        if(dist &lt; 40) {
             carried = 1;
             PlayerObject.isCarrying = 1;
         }

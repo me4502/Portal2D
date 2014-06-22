@@ -80,6 +80,7 @@ else
 
 var toSet = -1;
 
+//Perform button checks
 for(var i = 0; i &lt; instance_number(ButtonObject); i++) {
    with(instance_find(ButtonObject, i)) {
      if(wkey != key) continue;

@@ -268,6 +268,7 @@
     <instance objName="PortalSurfaceObject" x="192" y="448" name="inst_7404027B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ButtonObject" x="480" y="224" name="inst_0ADC2E7F" locked="0" code="key=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WallObject" x="608" y="32" name="inst_F4B923FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FaithPlateObject" x="208" y="208" name="inst_AE0ECDBA" locked="0" code="direction=-180;&#xA;movepower=8;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="FloorTiles" x="0" y="384" w="32" h="32" xo="0" yo="0" id="10003532" name="inst_D311E37F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

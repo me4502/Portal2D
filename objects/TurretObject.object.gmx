@@ -643,7 +643,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
+            <string>//Make sure they aren't going to stop over lava
+if(collision_circle(x+16, y+16, 16, Hazard, true, true) == noone) {
     if(hspeed != 0)
         hspeed *= 0.925;
     if(vspeed != 0)

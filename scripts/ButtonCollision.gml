@@ -1,5 +1,6 @@
 var wkey = key;
 
+//Perform button presses for ConditionalWallObject
 for(var i = 0; i < instance_number(ConditionalWallObject); i++) {
   with(instance_find(ConditionalWallObject, i)) {
       if(wkey == key) {
@@ -9,6 +10,7 @@ for(var i = 0; i < instance_number(ConditionalWallObject); i++) {
   }
 }
 
+//Perform button presses for WallObject
 for(var i = 0; i < instance_number(WallObject); i++) {
   with(instance_find(WallObject, i)) {
       if(direction == 180) {
@@ -20,6 +22,7 @@ for(var i = 0; i < instance_number(WallObject); i++) {
   }
 }
 
+//Perform button presses for FaithPlateObject
 for(var i = 0; i < instance_number(FaithPlateObject); i++) {
   with(instance_find(FaithPlateObject, i)) {
       if(depth == -1) {
@@ -30,4 +33,5 @@ for(var i = 0; i < instance_number(FaithPlateObject); i++) {
   }
 }
 
+//Set the image to the pressed state
 image_index = 1;
